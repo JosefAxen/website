@@ -1,16 +1,13 @@
 {
-  "routes": [
-    {
-      "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    }
-  ],
-  "globalHeaders": {
-    "Access-Control-Allow-Origin": "*"
-  }
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/css/*", "/js/*", "/images/*"]
+  },
   "mimeTypes": {
     ".css": "text/css",
-    ".js": "application/javascript"
+    ".js": "application/javascript",
+    ".json": "application/json",
+    ".br": "text/plain",
+    ".gz": "text/plain"
   }
 }
