@@ -9,4 +9,8 @@
   "globalHeaders": {
     "Access-Control-Allow-Origin": "*"
   }
+  "mimeTypes": {
+    ".css": "text/css",
+    ".js": "application/javascript"
+  }
 }
